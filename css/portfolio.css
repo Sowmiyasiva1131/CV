@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(120deg, #EDDFE0, #F5F5F7);
+    color: #705C53;
+    overflow-x: hidden;
+}
+
+#navigation-container {
+    background-color: #705C53;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#navigators {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#navigators a {
+    color: #F5F5F7;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+#navigators a:hover {
+    background-color: #B7B7B7;
+    color: #705C53;
+}
+
+#home {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.intro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #B7B7B7;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    animation: imageBounce 3s infinite;
+}
+
+@keyframes imageBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.intro-text h1 {
+    font-size: 50px;
+    color: #705C53;
+}
+
+.intro-text span {
+    color: #B7B7B7;
+    font-weight: bold;
+}
+
+section {
+    padding: 50px 10%;
+}
+
+h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #705C53;
+}
+
+ul {
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+a {
+    color: #B7B7B7;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#contact p, #contact ul {
+    text-align: center;
+}
+
+#contact ul li {
+    font-size: 20px;
+}
+
+#contact ul li a {
+    color: #B7B7B7;
+}
